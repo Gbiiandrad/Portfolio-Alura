@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh; /* ocupar todo o espaçamento da tela*/
+    box-sizing: border-box; /*para ser organizado e os filhos nao saia dos pais*/
+    background-color: #000000 ;
+    color: #F6F6F6;
+}
+
+.titulo-destaque {
+    color: #22D4FD;
+}
+
+.apresentacao {
+    margin: 10% 15%; /*margem para todos os elementos */
+    display: flex; /*ficar em direção de linha*/
+    align-items: center; /*centralizar no ponto central (no caso é a imagem q é maior em altura)*/
+    justify-content: space-between; /*fazer o espaçamento entre os elementos*/
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao_links {
+    display: flex; /*sempre quando vamos usar algo como o space-between temos que usar o display flex*/
+    justify-content: space-between;
+}
+
+.apresentacao__links_link {
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none; /*tirar a linha do link*/
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+
