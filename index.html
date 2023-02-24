@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     
     <title>Portfólio Alura</title>
 </head>
 <body>
     <!--Part 1 Cabeçalho-->
-    <header>
+    <header class="cabecalho">
 
+        <!--para inserir os links para navegar na pagina-->
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        </nav>
     </header>
 
     <!--Part 2 Principal-->
@@ -23,19 +28,30 @@
             </h1>
             <p class="apresentacao__conteudo__texto">Olá! Sou Joana Santos, desenvolvedora Front-end com especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas ideias. Vamos conversar?</p>
             
+            <!--Aualização do Portfolio-->
+            <h2 class="apresentacao_links_subtitulo">Acesse minhas redes:</h2>
+
+
             <!-- tag âncura-->
             <div class="apresentacao_links">
-                <a class="apresentacao__links_link" href="https://www.instagram.com">Instagram</a>
-                <a class="apresentacao__links_link" href="https://github.com/Gbiiandrad">GitHub</a>
+                <a class="apresentacao__links_link" href="https://github.com/Gbiiandrad">
+                    <img src="./img/Logo Github.png" alt="Logo github">GitHub
+                </a>
+                <a class="apresentacao__links_link" href="https://www.linkedin.com/in/gabrielle-andrade-da-silva-3a50251a1/">
+                    <img src="./img/Logo linkedin.png" alt="Logo Linkedin">Linkedin
+                </a>
+                <a class="apresentacao__links_link" href="#">
+                    <img src="./img/Logo Twitch.png" alt="Logo Twitch">Twitch
+                </a>
             </div>
         </section>
 
-        <img src="img/imagem.png" alt="Foto de si mesma">
+        <img src="./img/imagem.png" alt="Foto de si mesma">
     </main>
 
     <!--Part 2 Rodapé-->
-    <footer>
-
+    <footer class="rodape">
+        <p>Desenvolvido por Alura.</p>
     </footer>
 
 </body>
