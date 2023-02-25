@@ -41,7 +41,7 @@ body {
 
 .cabecalho__menu__link {
     font-family: var(--fonte-segundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -54,17 +54,18 @@ body {
     display: flex; /*ficar em direção de linha*/
     align-items: center; /*centralizar no ponto central (no caso é a imagem q é maior em altura)*/
     justify-content: space-between; /*fazer o espaçamento entre os elementos*/
+    gap: 82px;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 36px;
+    font-size: 2.25rem; /*era 36px mas vamos trabalhar com rem ( 1 rem = 16px ) então pegamos 36px ÷ 16 = 2,25*/
     font-family: var(--fonte-primaria);
 }
 
@@ -73,7 +74,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-segundaria);
 }
 
@@ -88,20 +89,20 @@ body {
 .apresentacao_links_subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links_link {
+.apresentacao__links_navegacao {
     /* background-color: #22D4FD; --- Atalho para comentar é "Ctrl + K + C".*/
     display: flex;
     justify-content: center;
     gap: 16px; /*para separar o icone do texto*/
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 8px;
     border: 2px solid  var(--cor-terciaria);
 
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none; /*tirar a linha do link*/
@@ -111,18 +112,22 @@ body {
     
 }
 
+.apresentacao__imagem {
+    width: 50%; /*50% da tela*/
+}
+
 .rodape {
     color: var(--cor-primaria);
     font-family: var(--fonte-segundaria);
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 
     background-color: var(--cor-terciaria);
     padding: 24px;
 }
 
-.apresentacao__links_link:hover {
+.apresentacao__links_navegacao:hover {
     background-color: var(--cor-hover-button);
     padding: 3%;
     transition: 0.5s;
@@ -135,4 +140,30 @@ body {
     font-size: 26px;
 }
 
+/*responsividade com midia queries*/
+
+/**/
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse; /*para deixar a imagem em coluna e em cima */
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    
+
+}
 
